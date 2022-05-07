@@ -5,16 +5,21 @@
 "use strict"
 
  function displayCost() {
-  // declare variables
+  // declaring variables
   let baseCost = "Please make a selection above."
    
 	// get user input
   let size = document.getElementById('size');
-  let topping1 = document.getElementById('topping1');
-  let topping2 = document.getElementById('topping2');
-  let topping3 = document.getElementById('topping3');
-  let topping4 = document.getElementById('topping4');
-  let topping5 = document.getElementById('topping5');
+
+  // determining the number of checkboxes checked (number of toppings selected)
+  let checkboxes =
+document.querySelectorAll('input[type="checkbox"]:checked');
+  let numToppings = checkboxes.length;
+
+  // declaring constant price
+  const TOPPING_PRICE = 0.50
+
+  toppingCost = numToppings * TOPPING_PRICE
 
   // if statements
   if (size == "pequena") {
