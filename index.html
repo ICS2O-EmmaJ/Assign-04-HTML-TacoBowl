@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Data -->
+    <meta charset="utf-8">
+    <meta name="description" content="User Input, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Emma Janani">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+    <link rel="manifest" href="./fav_index/site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>La Vida en México (Taco Bowls and Authentic Mexican Cuisine)</title>
+  </head>
+  <body>
+    <script src="./js/script.js"></script>
+    <h1>La Vida en México (Taco Bowls and Authentic Mexican Cuisine)</h1>
+		<table>
+			<tr align = "center">
+				<td valign="top" align="left">
+					<h3>Please enter your Taco Bowl order information below to calcualte the cost of your food order:</h3>
+          <h3>What size would you like?</h3>
+					<form action="javascript:displayCost()">																		
+						<label for="size">Size:</label>
+						<select name="size" id="size">
+						    <option value="">--Size of Taco Bowl--</option>
+						    <option value="pequena">Pequeña</option>
+						    <option value="mediana">Mediana</option>
+						    <option value="grande">Grande</option>
+						</select>
+						<br><br>     
+            <h3>What toppings would you like?</h3>
+            <input type="checkbox" id="topping1" name="topping1" value="guacamole">
+            <label for="topping1"> Guacamole</label><br><br>
+            <input type="checkbox" id="topping2" name="topping2" value="picodegallo">
+            <label for="topping2"> Pico de Gallo</label><br><br>
+            <input type="checkbox" id="topping3" name="topping3" value="mexicancrema">
+            <label for="topping3"> Mexican Crema</label><br><br>
+            <input type="checkbox" id="topping4" name="topping4" value="cheese">
+            <label for="topping4"> Shredded Cheese</label><br><br>
+            <input type="checkbox" id="topping5" name="topping5" value="cilantrolimerice">
+            <label for="topping5"> Cilantro Lime Rice</label>
+            <br><br>
+            <h3>Would you like a side of chips and salsa?</h3>
+            <input type="radio" id="yes" name="sideorder" value="yes">
+            <label for="yes">Yes</label><br><br>
+            <input type="radio" id="no" name="sideorder" value="no">
+            <label for="no">No</label><br><br>
+						<input type="submit" value="Display Cost">
+					</form>
+				</td>
+				<td valign="top" align="center">
+					<img src="./images/Museum.webp" alt="Museum" width="90%">
+				</td>
+			</tr>
+		</table>
+    <br>
+		<!-- Create a space where the user information will be displayed -->
+		<div id="display-results">
+		</div>
+		  </center>
+  </body>
+</html>
