@@ -5,25 +5,33 @@
 "use strict"
 
  function displayCost() {
-  // declare constants
-  let cost = "Please make a selection above."
+  // declare variables
+  let baseCost = "Please make a selection above."
    
 	// get user input
   let size = document.getElementById('size');
-  let toppings = document.getElementById('day');
+  let topping1 = document.getElementById('topping1');
+  let topping2 = document.getElementById('topping2');
+  let topping3 = document.getElementById('topping3');
+  let topping4 = document.getElementById('topping4');
+  let topping5 = document.getElementById('topping5');
 
   // if statements
-  if (size == pequena) {
-	cost = "7.45"
+  if (size == "pequena") {
+	baseCost = "The cost is 7.45"
 	}
-	else if (size == mediana) {
-	cost = "9.35"
+	else if (size == "mediana") {
+	baseCost = "The cost is 9.35"
 	}
-	else if (size == grande) {		
-	cost = "11.95"
+	else if (size == "grande") {		
+	baseCost = "The cost is 11.95"
 	}
-	
-  	// display the greeting
-  	document.getElementById('display-results').innerHTML = cost
+
+  const TOPPINGPRICE = 0.50
+  toppingNumber = 
+  topping cost = 
+   
+  // display the greeting
+	document.getElementById('display-results').innerHTML = baseCost
 }
    
