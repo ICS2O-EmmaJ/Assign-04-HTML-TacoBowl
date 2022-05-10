@@ -47,7 +47,7 @@
 
   // determining whether user wants a margarita or not by determining which radio button is selected (code taken from https://www.geeksforgeeks.org/how-to-check-whether-a-radio-button-is-selected-with-javascript/#:~:text=Using%20Input%20Radio%20checked%20property,id%20is%20check%20or%20not.)
   if(document.getElementById('yess').checked) {
-    sideDrink = 2.95;
+    sideDrink = 8.15;
   }
     
   if(document.getElementById('noo').checked) {

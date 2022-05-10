@@ -5,18 +5,14 @@
 */
 
 body {
-	background-color: #e0c36c;
+	background-color: #a9dec0;
 }
 
 #header {
-	background-color: #d9a50d;
+	background-color: #32ad68;
 	color: hsl(0, 0%, 0%);
-	padding: 40px;
+	padding: 5px;
 	text-align: center;
-}
-
-p {
-	background-color: #f4dc86;
 }
 
 div {
