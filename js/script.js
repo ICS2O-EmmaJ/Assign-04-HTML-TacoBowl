@@ -29,23 +29,33 @@
   // declaring constant topping price
   const TOPPING_PRICE = 0.50;
 
-  // determing topping price
+  // determing topping cost
   let toppingCost = numToppings * TOPPING_PRICE;
 
   // declaring variables
   let sideCost = 0;
+  let sideDrink = 0;
 
-  // determining whether user wants a side order or not by determining which radio button is selected (code taken from https://www.geeksforgeeks.org/how-to-check-whether-a-radio-button-is-selected-with-javascript/#:~:text=Using%20Input%20Radio%20checked%20property,id%20is%20check%20or%20not.)
+  // determining whether user wants chips and salsa or not by determining which radio button is selected (code taken from https://www.geeksforgeeks.org/how-to-check-whether-a-radio-button-is-selected-with-javascript/#:~:text=Using%20Input%20Radio%20checked%20property,id%20is%20check%20or%20not.)
   if(document.getElementById('yes').checked) {
-    sideCost = 4.00;
+    sideCost = 4.25;
   }
     
   if(document.getElementById('no').checked) {
     sideCost = 0;
   }
 
+  // determining whether user wants a margarita or not by determining which radio button is selected (code taken from https://www.geeksforgeeks.org/how-to-check-whether-a-radio-button-is-selected-with-javascript/#:~:text=Using%20Input%20Radio%20checked%20property,id%20is%20check%20or%20not.)
+  if(document.getElementById('yess').checked) {
+    sideDrink = 2.95;
+  }
+    
+  if(document.getElementById('noo').checked) {
+    sideDrink = 0;
+  }
+
   // calculating subtotal
-  let subtotal = baseCost + toppingCost + sideCost;
+  let subtotal = baseCost + toppingCost + sideCost + sideDrink;
 
   // calculating tax
   const HST = 0.13;
