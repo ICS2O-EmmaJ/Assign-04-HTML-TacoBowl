@@ -29,10 +29,20 @@
 <img src="./images/restaurant.jpg" alt="Restaurant" width="100%">
 <br>
 <br>
+
+
+
+
+    
+<h5><font face="Georgia">Welcome to La Vida en México, where we serve nothing but the freshest of taco bowls and high quality, delicious, authentic Mexican cuisine! With so many choices and ingredients, you are sure to discover a whole new world of tasty and vibrant flavours. At La Vida en México, we believe that better ingredients equals better food, so prepare to taste the best taco bowl that will have you asking for seconds in no time!</h5>
+
+<center><h4><font face="Georgia">Our Ingredients and Menu:</h4></center>
     
     <!-- Table MDL Component for sizes and side orders -->
 <center>
 <img src="./images/chipsandsalsa.jpg" alt="Chips and Salsa" height="150"><img src="./images/margarita.webp" alt="Margarita" height="150"><img src="./images/guacamole.webp" alt="Guacamole" height="150"><img src="./images/picodegallo.jpg" alt="Pico de Gallo" height="150"><img src="./images/mexicancrema.jpg" alt="Mexican Crema" height="150"><img src="./images/cilantrolimerice.webp" alt="Cilantro Lime Rice" height="150"><img src="./images/mediumcheddar.webp" alt="Medium Cheddar" height="150"><img src="./images/blackbeans.jpg" alt="Black Beans" height="150">
+<br>
+<br>
 <table>
   <tr>
     <td>
@@ -66,6 +76,42 @@
   </tbody>
 </table>
     </td>
+    <td>
+
+<!-- Wide card with share menu button -->
+<style>
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('./images/cardtacobowl.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+</style>
+
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Welcome</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    We are open from 8AM - 11PM every day! We look forward to seeing there! 
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Order Below
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
+</div>   
+    </td>
     
 <!-- Table MDL Component for toppings -->
     
@@ -92,15 +138,13 @@
 </table>    
     </td>
   </tr>
-</table>
 </center> 
-
 
 
 		<table>
 			<tr align = "center">
 				<td valign="top" align="left">
-					<h5><font face="Georgia"><strong>Please enter your food order information below to calcualte the cost of your taco bowl:</strong></h5>
+					<h5><font face="Georgia"><strong>Please enter the information below to calculate the cost of your taco bowl:</strong></h5>
 
           <!-- Asking user for size -->
           <h5><font face="Georgia">What size would you like?</h5>
@@ -152,6 +196,7 @@
           
           <!-- Create a space where the user information will be displayed -->
 		<div id="display-results">
+    <h4><font face="Georgia">Thank you for ordering from us! We look forward to seeing you next time!</h4>
 				</td>
 				<td valign="top" align="center">
 					<img src="./images/tacobowlpic.jpg" alt="Taco Bowl" width="80%">
