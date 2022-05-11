@@ -64,6 +64,6 @@
   // calculating total
   let total = subtotal + tax;
   
-  // display the greeting
+  // display the message
 	document.getElementById('display-results').innerHTML = "Your subtotal is $" + subtotal.toFixed(2) +".<br>Your HST is $" + tax.toFixed(2) + ".<br>Your total is $" + total.toFixed(2) + ".";
 }
