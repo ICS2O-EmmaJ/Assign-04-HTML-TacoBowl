@@ -11,15 +11,20 @@
 	// get user input
   let size = document.getElementById('size').value;
 
+  // declaring constants for sizes
+  const PEQUENA_COST = 7.45;
+  const MEDIANA_COST = 9.35;
+  const GRANDE_COST = 11.95;
+
   // calculating base cost using if statements
   if (size == "pequena") {
-  	baseCost = 7.45;
+  	baseCost = PEQUENA_COST;
 	}
 	else if (size == "mediana") {
-  	baseCost = 9.35;
+  	baseCost = MEDIANA_COST;
 	}
 	else if (size == "grande") {		
-  	baseCost = 11.95;
+  	baseCost = GRANDE_COST;
 	}    
    
   // determining how many toppings the user selected by counting number of checkboxes checked (code taken from https://www.techiedelight.com/count-number-check-boxes-javascript/)
@@ -32,26 +37,32 @@
   // determing topping cost
   let toppingCost = numToppings * TOPPING_PRICE;
 
-  // declaring variables
+  // declaring variables for side and drink
   let sideCost = 0;
   let sideDrink = 0;
 
+  // declaring constants for side and drink
+  const NACHOS_PRICE = 4.25;
+  const NO_NACHOS = 0;
+  const MARGARITA_PRICE = 8.15;
+  const NO_MARGARITA = 0;
+
   // determining whether user wants chips and salsa or not by determining which radio button is selected (code taken from https://www.geeksforgeeks.org/how-to-check-whether-a-radio-button-is-selected-with-javascript/#:~:text=Using%20Input%20Radio%20checked%20property,id%20is%20check%20or%20not.)
   if(document.getElementById('yes').checked) {
-    sideCost = 4.25;
+    sideCost = NACHOS_PRICE;
   }
     
   if(document.getElementById('no').checked) {
-    sideCost = 0;
+    sideCost = NO_NACHOS;
   }
 
   // determining whether user wants a margarita or not by determining which radio button is selected (code taken from https://www.geeksforgeeks.org/how-to-check-whether-a-radio-button-is-selected-with-javascript/#:~:text=Using%20Input%20Radio%20checked%20property,id%20is%20check%20or%20not.)
   if(document.getElementById('yess').checked) {
-    sideDrink = 8.15;
+    sideDrink = MARGARITA_PRICE;
   }
     
   if(document.getElementById('noo').checked) {
-    sideDrink = 0;
+    sideDrink = NO_MARGARITA;
   }
 
   // calculating subtotal
